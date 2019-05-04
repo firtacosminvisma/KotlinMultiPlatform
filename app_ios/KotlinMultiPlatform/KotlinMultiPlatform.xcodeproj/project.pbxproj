@@ -12,7 +12,6 @@
 		570396AD223122E500C02D08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570396AB223122E500C02D08 /* Main.storyboard */; };
 		570396B0223122E500C02D08 /* KotlinMultiPlatform.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 570396AE223122E500C02D08 /* KotlinMultiPlatform.xcdatamodeld */; };
 		570396B2223122E600C02D08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 570396B1223122E600C02D08 /* Assets.xcassets */; };
-		570396B5223122E600C02D08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570396B3223122E600C02D08 /* LaunchScreen.storyboard */; };
 		570396BD223123CA00C02D08 /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570396BC223123CA00C02D08 /* SharedCode.framework */; };
 		570396BE223123CA00C02D08 /* SharedCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 570396BC223123CA00C02D08 /* SharedCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -38,7 +37,6 @@
 		570396AC223122E500C02D08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		570396AF223122E500C02D08 /* KotlinMultiPlatform.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KotlinMultiPlatform.xcdatamodel; sourceTree = "<group>"; };
 		570396B1223122E600C02D08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		570396B4223122E600C02D08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		570396B6223122E600C02D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		570396BC223123CA00C02D08 /* SharedCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharedCode.framework; path = "../../SharedCode/build/xcode-frameworks/SharedCode.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,7 +77,6 @@
 				570396A9223122E500C02D08 /* ViewController.swift */,
 				570396AB223122E500C02D08 /* Main.storyboard */,
 				570396B1223122E600C02D08 /* Assets.xcassets */,
-				570396B3223122E600C02D08 /* LaunchScreen.storyboard */,
 				570396B6223122E600C02D08 /* Info.plist */,
 				570396AE223122E500C02D08 /* KotlinMultiPlatform.xcdatamodeld */,
 			);
@@ -146,7 +143,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570396B5223122E600C02D08 /* LaunchScreen.storyboard in Resources */,
 				570396B2223122E600C02D08 /* Assets.xcassets in Resources */,
 				570396AD223122E500C02D08 /* Main.storyboard in Resources */,
 			);
@@ -194,14 +190,6 @@
 				570396AC223122E500C02D08 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		570396B3223122E600C02D08 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				570396B4223122E600C02D08 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

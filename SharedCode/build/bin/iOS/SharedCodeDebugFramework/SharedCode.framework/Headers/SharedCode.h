@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@class SharedCodeHelloWorld;
+@class SharedCodeExpectedGreeting, SharedCodeGreeting, SharedCodeHelloWorld;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -137,6 +137,22 @@ __attribute__((swift_name("KotlinBoolean")))
 @interface SharedCodeBoolean : SharedCodeNumber
 - (instancetype)initWithBool:(BOOL)value;
 + (instancetype)numberWithBool:(BOOL)value;
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ExpectedGreeting")))
+@interface SharedCodeExpectedGreeting : KotlinBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (NSString *)getGreeting __attribute__((swift_name("getGreeting()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Greeting")))
+@interface SharedCodeGreeting : KotlinBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (NSString *)greetMe __attribute__((swift_name("greetMe()")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
