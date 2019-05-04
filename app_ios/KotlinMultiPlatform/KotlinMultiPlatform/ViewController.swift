@@ -11,14 +11,12 @@ import SharedCode
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var resultLable: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         let helloWorld = HelloWorld()
-        print(helloWorld.greetings())
+        resultLable.text = helloWorld.greetings()
     }
-
-
 }
-
