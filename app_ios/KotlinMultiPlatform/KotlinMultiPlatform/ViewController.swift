@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let helloWorld = HelloWorld()
-        resultLable.text = helloWorld.greetings()
+        let greeting = Greeting()
+        resultLable.text = greeting.greetMe()
     }
 }
