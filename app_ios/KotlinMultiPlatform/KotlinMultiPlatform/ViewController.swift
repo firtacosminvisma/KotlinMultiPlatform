@@ -10,13 +10,20 @@ import UIKit
 import SharedCode
 
 class ViewController: UIViewController {
-
     @IBOutlet weak var resultLable: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        let greeting = Greeting()
-        resultLable.text = greeting.greetMe()
+        resultLable.text = "Loading..."
+        let r = GitHubApi()
+        r.load { user -> KotlinUnit in
+            self.UI{
+                self.resultLable.text = "result : \(user.url)"
+            }
+            return KotlinUnit()
+        }
+    }
+    func UI(_ block: @escaping ()->Void) {
+        DispatchQueue.main.async(execute: block)
     }
 }
